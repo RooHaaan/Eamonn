@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@600&family=Patrick+Hand&family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: teal;
+}
+
+.navigationBar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    background-color: teal;
+    animation: AllSectionAnimation 1s ease-in;
+}
+.navigationBar li{
+    margin: 30px 20px;
+}
+.navigationBar a{
+    color: azure;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navigationBar a:hover{
+    border-bottom: 1px solid white;
+}
+
+
+/*FirstSection*/
+#FirstSection{
+    height: 90vh;
+    width: 100%;
+    margin-top: 80px;
+    background-color: teal;
+    display: flex;
+    animation: AllSectionAnimation 1s ease-in;
+}
+@keyframes AllSectionAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+#FirstSectionColum{
+ margin-top: 10%; 
+}
+#FirstSectionColum p{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 800px;
+}
+#FirstSectionColum h1{
+    font-family: 'Georama', sans-serif;
+    font-size: 64px;
+}
+#FirstSectionColum button{
+background-color: transparent;
+color: white;
+border: none;
+margin-left: -13px;
+}
+#FirstSectionColum i{
+    margin-left: 10px;
+}
+#FirstSection1stImage{
+    margin-top: -10%;
+    margin-bottom: 20px;
+}
+#FirstSectionColum span a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+
+}
+
+/*FirstSection*/
+/*ProjectSection*/
+#ProjectSection{
+    height: 80vh;
+    width: 100%;
+    animation: AllSectionAnimation 1s ease-in;
+}
+#ProjectSection h1{
+    padding: 40px 0px;
+    border-bottom: 1px dotted black;
+    font-family: 'Georama', sans-serif;
+}
+.firstDiv{
+    padding: 15px;
+    border-bottom: 1px dotted black;
+}
+.firstDiv a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 40px;
+    letter-spacing: 1px;
+    
+}
+.firstDiv i{
+    
+    font-size: 30px;
+    margin-left: 65%;
+    color: azure;
+}
+.SecondDiv{
+    padding: 15px;
+    border-bottom: 1px dotted black
+}
+.SecondDiv a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.SecondDiv i{
+    font-size: 30px;
+    color: azure;
+    margin-left: 76%;
+}
+.thirdDiv{
+    padding: 15px;
+    border-bottom: 1px dotted black
+}
+.thirdDiv a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.thirdDiv i{
+    font-size: 30px;
+    color: azure;
+    margin-left: 61%;
+}
+/*ProjectSection*/
+/*ThirdSection*/
+#ThirdSection{
+    height: 90vh;
+    width: 100%;
+}
+#thirdSectionRow{
+    padding: 50px;
+}
+#thirdSectionRow h3{
+    color: black;
+    margin: 20px 0px;
+}
+#thirdSectionRow p{
+    font-family: 'Source Code Pro', monospace;
+}
+#thirdSectionRow a{
+    color: white;
+    display: block;
+    margin: 10px 0px;
+}
+#thirdSectionRow i{
+    color: white;
+    margin: 0px 10px;
+}
+/*ThirdSection*/
+
+
+/*Responsive*/
+@media (max-width: 1080px) {
+    #FirstSection{
+        height: 89vh;
+        margin-top: 80px;
+    }
+    #FirstSectionColum h1{
+        font-family: 'Georama', sans-serif;
+        font-size: 50px;
+    }
+    #FirstSection1stImage{
+        margin-top: 20px;
+    }
+    #FirstSectionColum p{
+        font-size: 18px;   
+    }
+        /*SecondSection*/ 
+#ProjectSection{
+    height: 50vh;
+    width: 100%;
+}
+#ProjectSection h1{
+    padding: 20px 0px;
+}
+.firstDiv{
+    padding: 10px 0px;
+}
+.firstDiv a{
+    font-size: 30px;
+}
+.firstDiv i{
+    display: none;
+}
+.SecondDiv{
+    padding: 10px;
+}
+.SecondDiv a{
+    font-size: 30px;
+}
+.SecondDiv i{
+    display: none;
+    font-size: 20px;
+    color: azure;
+    margin-left: 30rem;
+}
+.thirdDiv{
+    padding: 10px 0px;
+}
+.thirdDiv a{
+    font-size: 30px;
+}
+.thirdDiv i{
+    display: none;
+}       
+/*SecondSection*/ 
+}
+@media (max-width: 768px){
+    /*FirstSection*/
+    #FirstSection{
+        height: 100%;
+        width: 100%;
+        margin-top: 80px;
+    }
+    #FirstSectionColum h1{
+        font-family: 'Georama', sans-serif;
+        font-size: 64px;
+    } 
+#FirstSection1stImage{
+    margin-top: 10px;
+} 
+    /*FirstSection*/  
+    /*SecondSection*/ 
+#ProjectSection{
+        height: 100%;
+        width: 100%;
+}  
+    #ProjectSection h1{
+        padding: 20px 0px;
+    }
+    .firstDiv{
+        padding: 10px 0px;
+    }
+    .firstDiv a{
+        font-size: 30px;
+    }
+    .firstDiv i{
+        display: none;
+    }
+    .SecondDiv{
+        padding: 10px;
+    }
+    .SecondDiv a{
+        font-size: 30px;
+    }
+    .SecondDiv i{
+        display: none;
+        font-size: 20px;
+        color: azure;
+        margin-left: 30rem;
+    }
+    .thirdDiv{
+        padding: 10px 0px;
+    }
+    .thirdDiv a{
+        font-size: 30px;
+    }
+    .thirdDiv i{
+        display: none;
+        font-size: 30px;
+        color: azure;
+
+    }       
+    /*SecondSection*/  
+    /*ThirdSection*/
+    #ThirdSection{
+        height: 100%;
+        width: 100%;
+    }
+    #ThirdSectionImg{
+        margin: 10px 0px;
+        height: 120px;
+        width: 100%;
+    }
+    #thirdSectionRow{
+        padding: 20px;
+    }    
+    /*ThirdSection*/  
+}
+/*Responsive*/
